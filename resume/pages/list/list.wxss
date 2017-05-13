@@ -1,0 +1,100 @@
+/* pages/list/list.wxss */
+.pageTop{
+  height: calc(100% - 104rpx);
+}
+.hide{
+  display: none;
+}
+
+.inputBox{
+  position: relative;
+  margin: 19rpx 28rpx;
+  height: 95rpx;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+.searchIcon{
+  float: left;
+  position: relative;
+  width: 88rpx;
+  text-align: center;
+  top: 50%;
+  margin-top: -9px;
+}
+.clearBox{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 88rpx;
+  height: 100%;
+}
+.clearIcon{
+  position: absolute;
+  right: 20rpx;
+  top: 50%;
+  margin-top: -9px;
+}
+.inputBox input{
+  float: left;
+  width: calc(100% - 130rpx);
+  height: 100%;
+  font-size: 28rpx;
+}
+
+.btnArea{
+  font-size: 42rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 104rpx;
+  background: #03a9f4;
+}
+/*关键字颜色*/
+.listBox .active,.result .active{
+  color: #03a9f4;
+}
+/*列表页*/
+.listBox{
+    color: #666;
+}
+.listBox .title{
+    padding:30rpx 33rpx 10rpx;
+    font-size: 28rpx;
+    line-height: 46rpx;
+    background: #fafafa;
+}
+.listBox .con{
+  padding: 20rpx 0;
+
+}
+.listBox .list{
+    padding: 33rpx 40rpx 26rpx;
+    border-bottom: 1px solid #ddd;
+    line-height: 48rpx;
+    font-size: 32rpx;
+}
+.listBox .list:last-child{
+  border: none;
+}
+/*没有结果*/
+.result{
+    padding: 26rpx;
+    font-size: 30rpx;
+    line-height: 40rpx;
+    color: #666;
+}
+
+.search{
+    padding: 16rpx 26rpx 0;
+    color: #666;
+}
+.search .title{
+    font-size: 35rpx;
+    line-height: 80rpx;
+}
+.search .con{
+    font-size: 29rpx;
+}
+.search .con .list{
+    padding: 15rpx 0;
+    line-height: 40rpx;
+}

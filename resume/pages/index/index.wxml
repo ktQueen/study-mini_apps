@@ -1,0 +1,84 @@
+<!--index.wxml-->
+<view class="container">
+    <scroll-view scroll-y="true" class="{{indexActive.conVal}}">
+        <view class="logo">
+            <image src="../../img/user.jpg"></image>
+        </view>
+        <view class="inputBox clear">
+            <icon type="search" color="#03a9f4" size="18" class="searchIcon" />
+            <input value="{{content}}" type="text" placeholder="请输入你想了解的关键字" placeholder-class="placeholder" bindconfirm="searchInput" bindinput="change"/>
+        </view>
+        <view class="hot">
+            <view class="hotTitle">热门搜索</view>
+            <view class="hotCon clear">
+                <block wx:for="{{tag}}" wx:key="tag" >
+                    <text class="tag" data-val="{{item.con}}" bindtap="searchTag">{{item.con}}</text>
+                </block>
+            </view>
+        </view>
+        <view class="slogan">
+            <view>我是一个有追求的前端</view>
+            <view>旺盛的求知欲+抗压能力强+沟通能力+团队合作精神好</view>
+        </view>
+    </scroll-view>
+     <scroll-view scroll-y="true" class="{{aboutActive.conVal}}" >
+       <view class="caption">
+            <view class="title">求职意向</view>
+            <view class="con">
+                <text>期望职能：前端开发</text>
+            </view>
+            <view class="con">
+                <text>期望薪资：面议</text>
+            </view>
+            <view class="con">
+                <text>期望地点：北京</text>
+            </view>
+       </view>
+
+       <view class="module company">
+            <view class="title">康婷的简介</view>
+            <view class="con">
+                康婷出生于1991年12月30日，重庆人，射手座。已经在前端领域3年半的时间，未来希望在前端的道路上一直前行。有意者请联系手机号：15311443258，邮箱：240913394@qq.com。
+            </view>
+       </view>
+
+         <view class="module skill">
+            <view class="title">专业技能</view>
+            <view class="con">
+                <view>1．扎实的前端开发经验，能独立完成前端开发工作； </view>
+                <view>2．熟练使用html+css，html5+css3开发、维护，熟练Bootstrap响应式布局开发</view>
+                <view>3．熟练使用原生JavaScript，jQuery开发框架，实现产品所需的动画效果以及与后台的数据交互</view>
+                <view>4．掌握Seajs模块化开发，了解NodeJs开发， angularJS开发框架熟悉主流浏览器的差异，利用自己的经验有效的解决浏览器兼容问题，熟悉前端调试工具</view>
+            </view>
+       </view>
+       
+       <view class="module advantage">
+            <view class="title">康婷的优势</view>
+            <view class="con">
+                <view>
+                    <image src="../../img/advantage1.png"></image>
+                    <view>热情</view>
+                </view>
+                <view>
+                    <image src="../../img/advantage2.png"></image>
+                    <view>自信</view>
+                </view>
+                <view>
+                    <image src="../../img/advantage3.png"></image>
+                    <view>吃苦耐劳</view>
+                </view>
+            </view>
+       </view>
+
+    </scroll-view>
+    <view class="btnArea">
+        <view data-class="active" class="{{indexActive.classVal}}" bindtap="index">
+            <image src="{{indexActive.srcVal}}"></image>
+            <view>康婷简历</view>
+        </view>
+        <view data-class="noActive" class="{{aboutActive.classVal}}" bindtap="aboutUs">
+            <image src="{{aboutActive.srcVal}}"></image>
+            <view>关于康婷</view>
+        </view>
+    </view>
+</view>

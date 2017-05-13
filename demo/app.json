@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/add/add"
+  ],
+  "window": {
+    "navigationBarTitleText": "易后台",
+    "navigationBarTextStyle":"#fff",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f88"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "navigationBarTitleText": "一只小小的前端",
+    "navigationBarBackgroundColor": "#03a9f4",
+    "navigationBarTextStyle":"#fff",
+    "backgroundColor": "#eee",
+    "backgroundTextStyle":"dark",
+    "enablePullDownRefresh": "true"
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "downloadFile": 40000
+  }
+}

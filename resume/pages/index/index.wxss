@@ -1,0 +1,148 @@
+/**index.wxss**/
+.pageTop{
+  height: calc(100% - 120rpx);
+}
+.hide{
+  display: none;
+}
+.btnArea{
+  padding-top: 16rpx;
+  display: flex;
+  flex:1;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid #efefef;
+  background: #fff;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 36rpx;
+  color: #999;
+}
+.btnArea image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.btnArea .active{
+  color: #03a9f4;
+}
+/**首页**/
+.logo{
+  padding: 140rpx 0 28rpx 0;
+  text-align: center;
+}
+.logo image{
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+}
+
+.inputBox{
+  position: relative;
+  margin: 40rpx 33rpx;
+  height: 95rpx;
+  background: #fff;
+  box-shadow: 0px 0px 40rpx #ddd;
+}
+.searchIcon{
+  float: left;
+  position: relative;
+  width: 88rpx;
+  text-align: center;
+  top: 50%;
+  margin-top: -9px;
+}
+.clearIcon{
+  position: absolute;
+  right: 20rpx;
+  top: 50%;
+  margin-top: -9px;
+}
+.inputBox input{
+  float: left;
+  width: calc(100% - 88rpx);
+  height: 100%;
+  font-size: 28rpx;
+}
+
+.hot{
+  color: #666;
+  margin: 0rpx 33rpx;
+}
+.hotTitle{
+  font-size: 31rpx;
+}
+.hotCon{
+  padding: 30rpx 0;
+}
+.hotCon .tag{
+  float: left;
+  min-width: 80rpx;
+  height: 52rpx;
+  padding: 0 21rpx;
+  margin-right: 30rpx;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 52rpx;
+  border: 1px solid #dddddd;
+}
+
+.slogan{
+  padding: 36rpx 0 30rpx;
+  font-size: 26rpx;
+  color: #999;
+  text-align: center;
+  line-height: 62rpx;
+}
+
+/*关于我们*/
+.caption{
+    padding:70rpx 35rpx 80rpx;
+    background: #03a9f4;
+    color: #fff;
+}
+.caption .title{
+    font-size: 48rpx;
+    line-height: 98rpx;
+    text-align: center;
+}
+.caption .con{
+    font-size: 26rpx;
+    line-height: 40rpx;
+    text-align: center;
+}
+
+.module{
+    font-size: 26rpx;
+    color: #666;
+}
+.module .title{
+    padding:20rpx 35rpx 0;
+    height: 70rpx;
+    line-height: 70rpx;
+}
+.company .con{
+    padding: 26rpx 35rpx;
+    line-height: 38rpx;
+    text-align: justify;
+    background: #fff;
+    text-indent: 2em;
+}
+.advantage .con{
+    padding: 50rpx 0rpx;
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    line-height: 60rpx;
+    text-align: center;
+}
+.advantage image{
+    width: 120rpx;
+    height: 120rpx;
+}
+.skill .con{
+    padding: 6rpx 35rpx 20rpx;
+    line-height: 60rpx;
+}

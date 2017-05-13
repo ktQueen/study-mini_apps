@@ -1,0 +1,17 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+    <scroll-view scroll-y="true" class="pageTop">
+        <view class="detail">
+             <view class="title"><text>{{detail.title}}</text></view>
+            <!--<view class="con"><text>{{detail.con}}</text></view>-->
+            <view class="con" >
+                <view>{{detail.con.time}}</view>
+                <view>{{detail.con.other1}}</view>
+                <view>{{detail.con.other2}}</view>
+                <view  wx:for="{{detail.con.work}}">{{item.message}}</view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="btnArea" bindtap="consult"> 马上联系</view>
+</view>
+

@@ -1,0 +1,25 @@
+/* pages/detail/detail.wxss */
+.pageTop{
+  height: calc(100% - 104rpx);
+}
+
+.detail{
+    padding: 30rpx 30rpx;
+    font-size: 33rpx;
+    line-height: 45rpx;
+}
+.detail .title{
+    padding-bottom: 42rpx;
+    color: #333;
+}
+.detail .con{
+    color: #999;
+}
+
+.btnArea{
+  font-size: 42rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 104rpx;
+  background: #03a9f4;
+}
